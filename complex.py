@@ -1,11 +1,10 @@
-
 from math import sqrt, atan, exp, sin, cos, pi
 
 
 # Building the basic class for complex numbers
 
 class Complex:
-    def __init__(self, a, b = 0):
+    def __init__(self, a, b=0):
 
         self.re = a
         self.im = b
@@ -73,43 +72,58 @@ class Complex:
 # important basic functions related to complex arithmetic
 
 def norm(z):
-
-    return sqrt(z.re ** 2 + z.im **2)
+    return sqrt(z.re ** 2 + z.im ** 2)
 
 
 def rect(r, theta):
-
+    """
+    Convert from polar to rectangular coordinates
+    :param r: radius
+    :param theta: angle
+    :return: 
+    """
     re = r * cos(theta)
     im = r * sin(theta)
 
     return Complex(re, im)
 
+
 # implementation of complex-valued functions
 
 def roots(k, z):
-    '''
+    """
     Finds the kth roots of a complex number
     :param k: int
     :param z: complex
     :return: list of roots in polar coordinates
-    '''
+    """
 
     if isinstance(z, (int, float)):
         z = Complex(z)
 
     r, theta = z.to_polar()
 
-    new_r = r ** (1/k)
+    new_r = r ** (1 / k)
 
     roots = []
 
     for i in range(k):
-        roots.append((new_r, theta / k + (2*pi*i)/k))
+        roots.append((new_r, theta / k + (2 * pi * i) / k))
 
     return roots
 
+
 def e(z):
+    """
+    complex exponential function
+    :param z: 
+    :return: 
+    """
+    # e^(a + bi) = e^a * e^(bi)
+    if isinstance(z, (int, float)):
+        z = Complex(z)
 
-    pass
+    new_re = e^(z.re) * cos(z.im)
+    new_im = e^(z.re) * sin(z.im)
 
-
+    return Complex(new_re, new_im)
