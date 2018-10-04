@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a958247a-c184-4223-b0f4-33c2a9aa14c8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/roots_of_unity.ipynb" afterPath="$PROJECT_DIR$/roots_of_unity.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/roots_of_unity.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="5" />
+              <selected id="7" />
             </state>
           </provider>
         </entry>
