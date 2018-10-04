@@ -28,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/roots_of_unity.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="8" />
+              <selected id="0" />
             </state>
           </provider>
         </entry>
@@ -68,8 +68,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/complex.py" />
-        <option value="$PROJECT_DIR$/roots_of_unity.ipynb" />
         <option value="$PROJECT_DIR$/circle_chords.py" />
+        <option value="$PROJECT_DIR$/roots_of_unity.ipynb" />
       </list>
     </option>
   </component>
@@ -305,7 +305,7 @@
     <entry file="file://$PROJECT_DIR$/roots_of_unity.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="8" />
+          <selected id="0" />
         </state>
       </provider>
     </entry>
