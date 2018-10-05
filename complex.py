@@ -33,12 +33,17 @@ class Complex:
         return other.__sub__(self)
 
     def __mul__(self, other):
-
+        if isinstance(other, (int, float)):
+            other = Complex(other)
         re = (self.re * other.re) - (self.im * other.im)
 
         im = self.re * other.im + self.im * other.re
 
         return Complex(re, im)
+
+    def __rmul__(self, other):
+
+        return self.__mul__(other)
 
     def __eq__(self, other):
 
@@ -123,8 +128,8 @@ def e(z):
     if isinstance(z, (int, float)):
         z = Complex(z)
 
-    new_re = e^(z.re) * cos(z.im)
-    new_im = e^(z.re) * sin(z.im)
+    new_re = exp(z.re) * cos(z.im)
+    new_im = exp(z.re) * sin(z.im)
 
     return Complex(new_re, new_im)
 
